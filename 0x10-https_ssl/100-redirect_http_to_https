@@ -41,7 +41,7 @@ frontend billypaul-frontend
         default_backend billypaul-backend
 
 frontend billypaul-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/billypaul.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.billypaul.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend billypaul-backend
 
